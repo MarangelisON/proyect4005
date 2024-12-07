@@ -8,9 +8,14 @@ using namespace std;
 class 
 {
     private:
-    string username;
-    string site;
+        string username;
+        string site;
     public:
+        Hash()
+        {
+           // unordered_map<string, unordered_map<string, string> > a =
+        }   
+        string hashFunction(string);
     
 };
 
