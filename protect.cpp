@@ -83,6 +83,6 @@ void subMenu()
 
 }
 
-//int Hash:: hashFunction(int key) {
-//return key % Size: //Key: 905, in return, this function will spit out 5|
+//string Hash:: hashFunction(string key_user) {
+//return key_user % Size: //Key: 905, in return, this function will spit out 5|
 //}
