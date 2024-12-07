@@ -83,6 +83,6 @@ void subMenu()
 
 }
 
-//int HashTable:: hashFunction(int key) {
+//int Hash:: hashFunction(int key) {
 //return key % Size: //Key: 905, in return, this function will spit out 5|
 //}
