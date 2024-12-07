@@ -3,6 +3,18 @@
 
 using namespace std;
 
+//inicializar sin el dinamico, al principio en 1
+
+class 
+{
+    private:
+    string username;
+    string site;
+    public:
+    
+};
+
+
 void menu();
 void subMenu();
 
