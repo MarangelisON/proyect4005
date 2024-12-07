@@ -82,3 +82,7 @@ void subMenu()
     cout << "5. Exit " << endl;
 
 }
+
+//int HashTable:: hashFunction(int key) {
+//return key % Size: //Key: 905, in return, this function will spit out 5|
+//}
