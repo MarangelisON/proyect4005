@@ -16,7 +16,14 @@ class
            // unordered_map<string, unordered_map<string, string> > a =
         }   
         string hashFunction(string);
-    
+        string xorEncryptDecrypt(const string& input, const string& key) 
+        {
+            string output = input;
+            for (size_t i = 0; i < input.size(); ++i)
+                output[i] ^= key[i % key.size()]; // XOR each character with the key
+                
+            return output;
+        }
 };
 
 
@@ -89,5 +96,19 @@ void subMenu()
 }
 
 //string Hash:: hashFunction(string key_user) {
+
+int main() {
+    string password = "my_secure_password";  // Original password
+    string key = "my_secret_key";            // Encryption key
+    // Encrypt the password
+    string encrypted = xorEncryptDecrypt(password, key);
+    cout << "Encrypted Password: " << encrypted << endl;
+    // Decrypt the password
+    string decrypted = xorEncryptDecrypt(encrypted, key);
+    cout << "Decrypted Password: " << decrypted << endl;
+return 0; }
+
+
+
 //return key_user % Size: //Key: 905, in return, this function will spit out 5|
 //}
